@@ -42,14 +42,14 @@
     button {
       padding: 12px 24px;
       font-size: 16px;
-      background-color: #007BFF;
+      background-color: #880000;
       color: white;
       border: none;
       border-radius: 6px;
       cursor: pointer;
     }
     button:hover {
-      background-color: #0056b3;
+      background-color: #ff0000;
     }
     .boton-con-texto {
       display: flex;
@@ -76,7 +76,13 @@
   </script>
 
   <section class="fondo1">
-    <br>
+   <!-- Botón para iniciar la música -->
+  <button onclick="document.getElementById('bg-audio').play()">🎵 Iniciar música</button>
+
+  <!-- Audio oculto en segundo plano -->
+  <audio id="bg-audio" loop>
+    <source src="audio-video/videoplayback.mp3" type="audio/mpeg">
+  </audio>
         <br>
         <br>
         <br>
