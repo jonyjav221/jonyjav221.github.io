@@ -25,6 +25,8 @@
       document.removeEventListener("click", iniciarMusica);
       window.removeEventListener("scroll", iniciarMusica);
     } 
+      function detenerMusica() { const audio = document.getElementById("bg-audio"); audio.pause();
+    }
     document.addEventListener("click", iniciarMusica);
     window.addEventListener("scroll", iniciarMusica); 
   </script>
@@ -32,7 +34,7 @@
   <section class="fondo1">
    <!-- Botón para iniciar la música -->
     <button onclick="document.getElementById('bg-audio').play()">🎵 Iniciar música</button>
-    <button onclick="detenerMusica()">🔇Detener música</button>
+    <button onclick="detenerMusica()">🔇Parar música</button>
   <!-- Audio oculto en segundo plano -->
   <audio id="bg-audio">
     <source src="audio-video/videoplayback.mp3" type="audio/mpeg">
@@ -128,7 +130,7 @@
         <button onclick="window.location.href='https://maps.app.goo.gl/9nyA49GGajVQ4rgV9';"> Ver Ubicación </button>
     </div>
     <div>
-        <button onclick="detenerMusica()">🔇Detener música</button>
+        <button onclick="detenerMusica()">🔇Parar música</button>
     </div>
   </section>
      
@@ -136,6 +138,7 @@
 </body>
 
 </html>
+
 
 
 
