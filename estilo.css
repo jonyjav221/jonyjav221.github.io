@@ -40,7 +40,7 @@ section {
       cursor: pointer;
     }
     button:hover {
-      background-color: #1b1b1b;
+      background-color: #3c39df;
     }
     .boton-con-texto {
       display: flex;
@@ -48,3 +48,4 @@ section {
       align-items: center;
     }
     #bg-audio { display: none; /* Oculta el reproductor */ }
+
