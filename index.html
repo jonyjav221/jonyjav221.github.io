@@ -31,10 +31,10 @@
 
   <section class="fondo1">
    <!-- Botón para iniciar la música -->
-   <button onclick="document.getElementById('bg-audio').play()">🎵 Iniciar música</button>
-
+    <button onclick="document.getElementById('bg-audio').play()">🎵 Iniciar música</button>
+    <button onclick="detenerMusica()">🔇Detener música</button>
   <!-- Audio oculto en segundo plano -->
-  <audio id="bg-audio" loop>
+  <audio id="bg-audio">
     <source src="audio-video/videoplayback.mp3" type="audio/mpeg">
   </audio>
         <br>
@@ -127,11 +127,15 @@
     <div style="text-align: center; margin-top: 50px;">
         <button onclick="window.location.href='https://maps.app.goo.gl/9nyA49GGajVQ4rgV9';"> Ver Ubicación </button>
     </div>
+    <div>
+        <button onclick="detenerMusica()">🔇Detener música</button>
+    </div>
   </section>
      
 
 </body>
 
 </html>
+
 
 
